@@ -1,0 +1,6 @@
+framework module Pods_Automobile_Catalog {
+  umbrella header "Pods-Automobile-Catalog-umbrella.h"
+
+  export *
+  module * { export * }
+}
