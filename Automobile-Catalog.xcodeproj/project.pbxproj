@@ -9,9 +9,35 @@
 /* Begin PBXBuildFile section */
 		80DD7685317CFC78CB55B753 /* Pods_Automobile_Catalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD3AF11625B45D9A03DF17B /* Pods_Automobile_Catalog.framework */; };
 		AB1CBF3622169689004B31C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF3522169689004B31C7 /* AppDelegate.swift */; };
-		AB1CBF3822169689004B31C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF3722169689004B31C7 /* ViewController.swift */; };
 		AB1CBF3D2216968A004B31C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1CBF3C2216968A004B31C7 /* Assets.xcassets */; };
 		AB1CBF402216968A004B31C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB1CBF3E2216968A004B31C7 /* LaunchScreen.storyboard */; };
+		AB1CBF4E2216E3D5004B31C7 /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF4D2216E3D5004B31C7 /* DefaultCell.swift */; };
+		AB1CBF502216E407004B31C7 /* RealmWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF4F2216E407004B31C7 /* RealmWrapper.swift */; };
+		AB1CBF522216E503004B31C7 /* Realm+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF512216E503004B31C7 /* Realm+Init.swift */; };
+		AB1CBF542216E554004B31C7 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF532216E554004B31C7 /* Constant.swift */; };
+		AB1CBF562216E5D3004B31C7 /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF552216E5D3004B31C7 /* UIColor+AppColors.swift */; };
+		AB1CBF582216E611004B31C7 /* UITextField+ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF572216E611004B31C7 /* UITextField+ClearButton.swift */; };
+		AB1CBF5A2216E68C004B31C7 /* UIAlert+defaultAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF592216E68C004B31C7 /* UIAlert+defaultAlert.swift */; };
+		AB1CBF5C2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF5B2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift */; };
+		AB1CBF5E2216E783004B31C7 /* CarsListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF5D2216E783004B31C7 /* CarsListViewModelProtocol.swift */; };
+		AB1CBF602216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF5F2216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift */; };
+		AB1CBF642216E8F6004B31C7 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF632216E8F6004B31C7 /* Car.swift */; };
+		AB1CBF662216EB2C004B31C7 /* RealmCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF652216EB2C004B31C7 /* RealmCar.swift */; };
+		AB1CBF682216F08B004B31C7 /* CarDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF672216F08B004B31C7 /* CarDetailViewModelProtocol.swift */; };
+		AB1CBF6A2216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF692216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift */; };
+		AB1CBF6E2216F48D004B31C7 /* CarsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF6D2216F48D004B31C7 /* CarsListController.swift */; };
+		AB1CBF702216F4E0004B31C7 /* CarsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF6F2216F4E0004B31C7 /* CarsListViewModel.swift */; };
+		AB1CBF722216F4F6004B31C7 /* CarsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF712216F4F6004B31C7 /* CarsListCoordinator.swift */; };
+		AB1CBF762216F7B7004B31C7 /* CarTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF752216F7B7004B31C7 /* CarTableCell.swift */; };
+		AB1CBF782216F814004B31C7 /* CarTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF772216F814004B31C7 /* CarTableCellViewModel.swift */; };
+		AB1CBF7A2216FDA6004B31C7 /* CarDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF792216FDA6004B31C7 /* CarDetailViewModel.swift */; };
+		AB1CBF7C2216FDBA004B31C7 /* CarDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF7B2216FDBA004B31C7 /* CarDetailController.swift */; };
+		AB1CBF802217088E004B31C7 /* CarDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF7F2217088E004B31C7 /* CarDetailInfoCell.swift */; };
+		AB1CBF8222170C03004B31C7 /* CarDetailSubModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8122170C03004B31C7 /* CarDetailSubModelCell.swift */; };
+		AB1CBF8422170C55004B31C7 /* CarDetailDeleteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8322170C55004B31C7 /* CarDetailDeleteCell.swift */; };
+		AB1CBF8622170C90004B31C7 /* CarDetailInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8522170C90004B31C7 /* CarDetailInfoCellViewModel.swift */; };
+		AB1CBF8822170D5C004B31C7 /* CarDetailSubModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8722170D5C004B31C7 /* CarDetailSubModelViewModel.swift */; };
+		AB1CBF8A221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,10 +45,36 @@
 		A5C304ACF497F816487D9096 /* Pods-Automobile-Catalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automobile-Catalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Automobile-Catalog/Pods-Automobile-Catalog.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1CBF3222169688004B31C7 /* Automobile-Catalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Automobile-Catalog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1CBF3522169689004B31C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AB1CBF3722169689004B31C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AB1CBF3C2216968A004B31C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1CBF3F2216968A004B31C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB1CBF412216968A004B31C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB1CBF4D2216E3D5004B31C7 /* DefaultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCell.swift; sourceTree = "<group>"; };
+		AB1CBF4F2216E407004B31C7 /* RealmWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWrapper.swift; sourceTree = "<group>"; };
+		AB1CBF512216E503004B31C7 /* Realm+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Init.swift"; sourceTree = "<group>"; };
+		AB1CBF532216E554004B31C7 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AB1CBF552216E5D3004B31C7 /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		AB1CBF572216E611004B31C7 /* UITextField+ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+ClearButton.swift"; sourceTree = "<group>"; };
+		AB1CBF592216E68C004B31C7 /* UIAlert+defaultAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+defaultAlert.swift"; sourceTree = "<group>"; };
+		AB1CBF5B2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmWrapper+ChangeData.swift"; sourceTree = "<group>"; };
+		AB1CBF5D2216E783004B31C7 /* CarsListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModelProtocol.swift; sourceTree = "<group>"; };
+		AB1CBF5F2216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		AB1CBF632216E8F6004B31C7 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		AB1CBF652216EB2C004B31C7 /* RealmCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCar.swift; sourceTree = "<group>"; };
+		AB1CBF672216F08B004B31C7 /* CarDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		AB1CBF692216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailTableCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		AB1CBF6D2216F48D004B31C7 /* CarsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListController.swift; sourceTree = "<group>"; };
+		AB1CBF6F2216F4E0004B31C7 /* CarsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF712216F4F6004B31C7 /* CarsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCoordinator.swift; sourceTree = "<group>"; };
+		AB1CBF752216F7B7004B31C7 /* CarTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableCell.swift; sourceTree = "<group>"; };
+		AB1CBF772216F814004B31C7 /* CarTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableCellViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF792216FDA6004B31C7 /* CarDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF7B2216FDBA004B31C7 /* CarDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailController.swift; sourceTree = "<group>"; };
+		AB1CBF7F2217088E004B31C7 /* CarDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailInfoCell.swift; sourceTree = "<group>"; };
+		AB1CBF8122170C03004B31C7 /* CarDetailSubModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailSubModelCell.swift; sourceTree = "<group>"; };
+		AB1CBF8322170C55004B31C7 /* CarDetailDeleteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailDeleteCell.swift; sourceTree = "<group>"; };
+		AB1CBF8522170C90004B31C7 /* CarDetailInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailInfoCellViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF8722170D5C004B31C7 /* CarDetailSubModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailSubModelViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailDeleteCellViewModel.swift; sourceTree = "<group>"; };
 		C01C1555E7CA051C55D09D08 /* Pods-Automobile-Catalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automobile-Catalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Automobile-Catalog/Pods-Automobile-Catalog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +136,8 @@
 		AB1CBF47221696B2004B31C7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF4D2216E3D5004B31C7 /* DefaultCell.swift */,
+				AB1CBF4F2216E407004B31C7 /* RealmWrapper.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -91,7 +145,8 @@
 		AB1CBF48221696BA004B31C7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AB1CBF3722169689004B31C7 /* ViewController.swift */,
+				AB1CBF6C2216F3A5004B31C7 /* CarDetailScreen */,
+				AB1CBF6B2216F355004B31C7 /* CarsListScreen */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -99,6 +154,8 @@
 		AB1CBF49221696D4004B31C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF622216E8DE004B31C7 /* Realm */,
+				AB1CBF612216E8D8004B31C7 /* Transient */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +163,7 @@
 		AB1CBF4A221696EF004B31C7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF532216E554004B31C7 /* Constant.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -113,6 +171,11 @@
 		AB1CBF4B2216970B004B31C7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF512216E503004B31C7 /* Realm+Init.swift */,
+				AB1CBF552216E5D3004B31C7 /* UIColor+AppColors.swift */,
+				AB1CBF572216E611004B31C7 /* UITextField+ClearButton.swift */,
+				AB1CBF592216E68C004B31C7 /* UIAlert+defaultAlert.swift */,
+				AB1CBF5B2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,8 +183,87 @@
 		AB1CBF4C22169713004B31C7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF5D2216E783004B31C7 /* CarsListViewModelProtocol.swift */,
+				AB1CBF5F2216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift */,
+				AB1CBF672216F08B004B31C7 /* CarDetailViewModelProtocol.swift */,
+				AB1CBF692216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AB1CBF612216E8D8004B31C7 /* Transient */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF632216E8F6004B31C7 /* Car.swift */,
+			);
+			path = Transient;
+			sourceTree = "<group>";
+		};
+		AB1CBF622216E8DE004B31C7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF652216EB2C004B31C7 /* RealmCar.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		AB1CBF6B2216F355004B31C7 /* CarsListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF6D2216F48D004B31C7 /* CarsListController.swift */,
+				AB1CBF6F2216F4E0004B31C7 /* CarsListViewModel.swift */,
+				AB1CBF712216F4F6004B31C7 /* CarsListCoordinator.swift */,
+				AB1CBF742216F523004B31C7 /* Cells */,
+				AB1CBF732216F508004B31C7 /* ViewModels */,
+			);
+			path = CarsListScreen;
+			sourceTree = "<group>";
+		};
+		AB1CBF6C2216F3A5004B31C7 /* CarDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF792216FDA6004B31C7 /* CarDetailViewModel.swift */,
+				AB1CBF7B2216FDBA004B31C7 /* CarDetailController.swift */,
+				AB1CBF7D2216FE0E004B31C7 /* Cells */,
+				AB1CBF7E2216FE19004B31C7 /* ViewModels */,
+			);
+			path = CarDetailScreen;
+			sourceTree = "<group>";
+		};
+		AB1CBF732216F508004B31C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF772216F814004B31C7 /* CarTableCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB1CBF742216F523004B31C7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF752216F7B7004B31C7 /* CarTableCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB1CBF7D2216FE0E004B31C7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF7F2217088E004B31C7 /* CarDetailInfoCell.swift */,
+				AB1CBF8122170C03004B31C7 /* CarDetailSubModelCell.swift */,
+				AB1CBF8322170C55004B31C7 /* CarDetailDeleteCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AB1CBF7E2216FE19004B31C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF8522170C90004B31C7 /* CarDetailInfoCellViewModel.swift */,
+				AB1CBF8722170D5C004B31C7 /* CarDetailSubModelViewModel.swift */,
+				AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		EBA5E639901897A7DA9363AA /* Pods */ = {
@@ -248,8 +390,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB1CBF3822169689004B31C7 /* ViewController.swift in Sources */,
+				AB1CBF8622170C90004B31C7 /* CarDetailInfoCellViewModel.swift in Sources */,
+				AB1CBF522216E503004B31C7 /* Realm+Init.swift in Sources */,
+				AB1CBF8822170D5C004B31C7 /* CarDetailSubModelViewModel.swift in Sources */,
+				AB1CBF8422170C55004B31C7 /* CarDetailDeleteCell.swift in Sources */,
+				AB1CBF7A2216FDA6004B31C7 /* CarDetailViewModel.swift in Sources */,
+				AB1CBF762216F7B7004B31C7 /* CarTableCell.swift in Sources */,
+				AB1CBF802217088E004B31C7 /* CarDetailInfoCell.swift in Sources */,
+				AB1CBF722216F4F6004B31C7 /* CarsListCoordinator.swift in Sources */,
+				AB1CBF4E2216E3D5004B31C7 /* DefaultCell.swift in Sources */,
+				AB1CBF5E2216E783004B31C7 /* CarsListViewModelProtocol.swift in Sources */,
+				AB1CBF642216E8F6004B31C7 /* Car.swift in Sources */,
+				AB1CBF5C2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift in Sources */,
+				AB1CBF6A2216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift in Sources */,
 				AB1CBF3622169689004B31C7 /* AppDelegate.swift in Sources */,
+				AB1CBF502216E407004B31C7 /* RealmWrapper.swift in Sources */,
+				AB1CBF782216F814004B31C7 /* CarTableCellViewModel.swift in Sources */,
+				AB1CBF702216F4E0004B31C7 /* CarsListViewModel.swift in Sources */,
+				AB1CBF582216E611004B31C7 /* UITextField+ClearButton.swift in Sources */,
+				AB1CBF7C2216FDBA004B31C7 /* CarDetailController.swift in Sources */,
+				AB1CBF602216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift in Sources */,
+				AB1CBF8222170C03004B31C7 /* CarDetailSubModelCell.swift in Sources */,
+				AB1CBF562216E5D3004B31C7 /* UIColor+AppColors.swift in Sources */,
+				AB1CBF542216E554004B31C7 /* Constant.swift in Sources */,
+				AB1CBF6E2216F48D004B31C7 /* CarsListController.swift in Sources */,
+				AB1CBF682216F08B004B31C7 /* CarDetailViewModelProtocol.swift in Sources */,
+				AB1CBF8A221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift in Sources */,
+				AB1CBF662216EB2C004B31C7 /* RealmCar.swift in Sources */,
+				AB1CBF5A2216E68C004B31C7 /* UIAlert+defaultAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
