@@ -22,12 +22,10 @@ final class RealmCar: Object, RealmEntity {
     @objc dynamic var subModelType: String?
     @objc dynamic var id: String?
     
-    
     // MARK: - Methods
     override class func primaryKey() -> String? {
         return taskPrimaryKey
     }
-    
     
     // MARK: - Realm transform
     static func from(transient: Car, in realm: Realm) -> RealmCar {

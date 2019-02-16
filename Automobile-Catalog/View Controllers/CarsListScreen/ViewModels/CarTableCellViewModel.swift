@@ -6,27 +6,38 @@
 //  Copyright © 2019 Pavel Kurilov. All rights reserved.
 //
 
-import UIKit
 import SnapKit
 
-class ContactTableCell: CarsListTableCellViewModelProtocol {
+enum SubMoodelType {
+    case sedan, suv, hatchback, estate, minivan, pickup
+    
+    var description: String {
+        switch self {
+        case .sedan:
+            return "Sedan"
+        case .suv:
+            return "SUV"
+        case .hatchback:
+            return "Hatchback"
+        case .estate:
+            return "Estate"
+        case .minivan:
+            return "Minivan"
+        case .pickup:
+            return "Pickup"
+        }
+    }
+}
+
+class CarTableCellViewModel: CarsListTableCellViewModelProtocol {
     
     // MARK: - Properies
     private var car: Car
     
-    var makeCompany: String {
-        let makeCompany = car.makeCompany ?? ""
-        return makeCompany
-    }
-    
-    var yearProduction: String {
-        let yearProduction = car.yearProduction ?? Constant.defaultYearProduction
-        return String(yearProduction)
-    }
-    
-    var modelType: String {
-        let modelType = car.modelType ?? ""
-        return modelType
+    var shortDevelopInfo: String {
+        let shortDevelopInfo =
+            String("\(car.makeCompany ?? "") \(car.modelType ?? ""), \(String(car.yearProduction ?? Constant.defaultYearProduction))")
+        return shortDevelopInfo
     }
     
     var classType: String {

@@ -10,9 +10,7 @@ import UIKit
 
 protocol CarsListTableCellViewModelProtocol: class {
     
-    var makeCompany: String { get }
-    var yearProduction: String { get }
-    var modelType: String { get }
+    var shortDevelopInfo: String { get }
     var classType: String { get }
     var subModelType: String { get }
 }
