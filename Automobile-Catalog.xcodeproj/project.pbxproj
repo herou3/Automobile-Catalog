@@ -38,6 +38,10 @@
 		AB1CBF8622170C90004B31C7 /* CarDetailInfoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8522170C90004B31C7 /* CarDetailInfoCellViewModel.swift */; };
 		AB1CBF8822170D5C004B31C7 /* CarDetailSubModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8722170D5C004B31C7 /* CarDetailSubModelViewModel.swift */; };
 		AB1CBF8A221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */; };
+		AB1CBF8D22186F05004B31C7 /* String+sanitizedYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8C22186F05004B31C7 /* String+sanitizedYear.swift */; };
+		AB1CBF902218DCE3004B31C7 /* SubModelPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF8F2218DCE3004B31C7 /* SubModelPickerController.swift */; };
+		AB1CBF922218DCF7004B31C7 /* SoundPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF912218DCF7004B31C7 /* SoundPickerViewModel.swift */; };
+		AB1CBF942218DD3F004B31C7 /* SubModelPickerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1CBF932218DD3F004B31C7 /* SubModelPickerViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,10 @@
 		AB1CBF8522170C90004B31C7 /* CarDetailInfoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailInfoCellViewModel.swift; sourceTree = "<group>"; };
 		AB1CBF8722170D5C004B31C7 /* CarDetailSubModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailSubModelViewModel.swift; sourceTree = "<group>"; };
 		AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailDeleteCellViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF8C22186F05004B31C7 /* String+sanitizedYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+sanitizedYear.swift"; sourceTree = "<group>"; };
+		AB1CBF8F2218DCE3004B31C7 /* SubModelPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModelPickerController.swift; sourceTree = "<group>"; };
+		AB1CBF912218DCF7004B31C7 /* SoundPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPickerViewModel.swift; sourceTree = "<group>"; };
+		AB1CBF932218DD3F004B31C7 /* SubModelPickerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubModelPickerViewModelProtocol.swift; sourceTree = "<group>"; };
 		C01C1555E7CA051C55D09D08 /* Pods-Automobile-Catalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automobile-Catalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Automobile-Catalog/Pods-Automobile-Catalog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +153,7 @@
 		AB1CBF48221696BA004B31C7 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AB1CBF8E2218DCA0004B31C7 /* SubModelPickerScreen */,
 				AB1CBF6C2216F3A5004B31C7 /* CarDetailScreen */,
 				AB1CBF6B2216F355004B31C7 /* CarsListScreen */,
 			);
@@ -176,6 +185,7 @@
 				AB1CBF572216E611004B31C7 /* UITextField+ClearButton.swift */,
 				AB1CBF592216E68C004B31C7 /* UIAlert+defaultAlert.swift */,
 				AB1CBF5B2216E6BC004B31C7 /* RealmWrapper+ChangeData.swift */,
+				AB1CBF8C22186F05004B31C7 /* String+sanitizedYear.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +197,7 @@
 				AB1CBF5F2216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift */,
 				AB1CBF672216F08B004B31C7 /* CarDetailViewModelProtocol.swift */,
 				AB1CBF692216F0C0004B31C7 /* CarDetailTableCellViewModelProtocol.swift */,
+				AB1CBF932218DD3F004B31C7 /* SubModelPickerViewModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -264,6 +275,15 @@
 				AB1CBF89221712E9004B31C7 /* CarDetailDeleteCellViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB1CBF8E2218DCA0004B31C7 /* SubModelPickerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AB1CBF8F2218DCE3004B31C7 /* SubModelPickerController.swift */,
+				AB1CBF912218DCF7004B31C7 /* SoundPickerViewModel.swift */,
+			);
+			path = SubModelPickerScreen;
 			sourceTree = "<group>";
 		};
 		EBA5E639901897A7DA9363AA /* Pods */ = {
@@ -409,11 +429,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1CBF902218DCE3004B31C7 /* SubModelPickerController.swift in Sources */,
 				AB1CBF8622170C90004B31C7 /* CarDetailInfoCellViewModel.swift in Sources */,
 				AB1CBF522216E503004B31C7 /* Realm+Init.swift in Sources */,
 				AB1CBF8822170D5C004B31C7 /* CarDetailSubModelViewModel.swift in Sources */,
 				AB1CBF8422170C55004B31C7 /* CarDetailDeleteCell.swift in Sources */,
 				AB1CBF7A2216FDA6004B31C7 /* CarDetailViewModel.swift in Sources */,
+				AB1CBF8D22186F05004B31C7 /* String+sanitizedYear.swift in Sources */,
 				AB1CBF762216F7B7004B31C7 /* CarTableCell.swift in Sources */,
 				AB1CBF802217088E004B31C7 /* CarDetailInfoCell.swift in Sources */,
 				AB1CBF722216F4F6004B31C7 /* CarsListCoordinator.swift in Sources */,
@@ -429,6 +451,8 @@
 				AB1CBF582216E611004B31C7 /* UITextField+ClearButton.swift in Sources */,
 				AB1CBF7C2216FDBA004B31C7 /* CarDetailController.swift in Sources */,
 				AB1CBF602216E7EE004B31C7 /* CarsListTableCellViewModelProtocol.swift in Sources */,
+				AB1CBF922218DCF7004B31C7 /* SoundPickerViewModel.swift in Sources */,
+				AB1CBF942218DD3F004B31C7 /* SubModelPickerViewModelProtocol.swift in Sources */,
 				AB1CBF8222170C03004B31C7 /* CarDetailSubModelCell.swift in Sources */,
 				AB1CBF562216E5D3004B31C7 /* UIColor+AppColors.swift in Sources */,
 				AB1CBF542216E554004B31C7 /* Constant.swift in Sources */,

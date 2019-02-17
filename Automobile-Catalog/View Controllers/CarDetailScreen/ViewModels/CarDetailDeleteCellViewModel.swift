@@ -12,9 +12,20 @@ class CarDetailDeleteCellViewModel: CarDetailTableCellViewModelProtocol {
     
     // MARK: - Properties
     var value: String?
+    var deleteRequestBlock: (() -> Void)?
+    
+    // MARK: - Init / deinit
+    init(value: String?) {
+        self.deleteRequestBlock = deleteAction
+    }
     
     // MARK: - Methods CarDetailTableCellViewModelProtocol
     func configure(with value: String?) {
         self.value = value
+    }
+    
+    // MARK: - Internal Methods
+    func deleteAction() {
+        self.deleteRequestBlock?()
     }
 }

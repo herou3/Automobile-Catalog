@@ -9,9 +9,16 @@
 import Foundation
 import RealmSwift
 
+protocol CarsListViewModelDelegate: class {
+    
+    func carListViewModel(_ viewModel: CarsListViewModel, didSelectCar car: Car)
+    func carListViewModelDidReqestSelectEmptyCar(_ viewModel: CarsListViewModel)
+}
+
 class CarsListViewModel: CarsListViewModelProtocol {
     
     // MARK: - Properies
+    weak var delegate: CarsListViewModelDelegate?
     private var cars: [Car] = []
     private var carExample: [Car]
     private var realm: Realm
@@ -45,6 +52,7 @@ class CarsListViewModel: CarsListViewModelProtocol {
             for car in carExample {
                 realmWrapper.saveObject(object: car)
             }
+            cars = carExample
         }
         
         for obj in realm.objects(RealmCar.self) {
@@ -69,15 +77,15 @@ class CarsListViewModel: CarsListViewModelProtocol {
     
     func selectRow(atIndexPath indexPath: IndexPath) {
         
-        print(cellViewModel(forIndexPath: indexPath)?.shortDevelopInfo ?? "XXX")
+        delegate?.carListViewModel(self, didSelectCar: cars[indexPath.row])
     }
     
     func showNewCarViewController() {
-        print("Show")
+        delegate?.carListViewModelDidReqestSelectEmptyCar(self)
     }
     
     // MARK: - Realm methods
-    func updateCars(newCar: Car?) {
+    func updateCar(newCar: Car?) {
         guard let newCar = newCar else { return }
         if !(cars.map { $0.id }.contains(newCar.id)) {
             cars.append(newCar)
@@ -92,7 +100,7 @@ class CarsListViewModel: CarsListViewModelProtocol {
         }
     }
     
-    func deleteCars(car: Car?) {
+    func deleteCar(car: Car?) {
         guard let car = car else { return }
         let index = cars.index(where: {$0.id == car.id })
         guard let curentIndex = index else { return }

@@ -45,7 +45,6 @@ final class RealmCar: Object, RealmEntity {
         realmCar.modelType = transient.modelType
         realmCar.classType = transient.classType
         realmCar.subModelType = transient.subModelType
-        realmCar.id = transient.id
         
         return realmCar
     }
